@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="nicepage.css" media="screen">
+        <link rel="stylesheet" href="embedded.css" media="screen">
+        <script src="jquery-3.6.4.min.js"></script>
+    </head>
+    <body>
+        <section class="u-align-center u-clearfix u-palette-2-base u-valign-middle-xs u-section-2">
+            <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1"></div>
+            <div class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-list u-list-1">
+                <div class="u-repeater u-repeater-1">
+                  <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                    <div class="u-container-layout u-similar-container u-valign-top-sm u-valign-top-xs u-container-layout-1">
+                      <div id="foto1" alt="" class="u-border-10 u-border-white u-image u-image-circle u-image-1" data-image-width="900" data-image-height="923"></div>
+                      <h3 class="u-text u-text-1"> Jorge</h3>
+                      <div class="u-border-6 u-border-white u-expanded-width u-line u-line-horizontal u-line-1"></div>
+                    </div>
+                  </div>
+                  <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                    <div class="u-container-layout u-similar-container u-valign-top-sm u-valign-top-xs u-container-layout-2">
+                      <div id="foto2" alt="" class="u-border-10 u-border-white u-image u-image-circle u-image-2" data-image-width="418" data-image-height="626"></div>
+                      <h3 class="u-text u-text-3">Joaquim</h3>
+                      <div class="u-border-6 u-border-white u-expanded-width u-line u-line-horizontal u-line-2"></div>
+                    </div>
+                  </div>
+                  <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                    <div class="u-container-layout u-similar-container u-valign-top-sm u-valign-top-xs u-container-layout-3">
+                      <div id="foto3" alt="" class="u-border-10 u-border-white u-image u-image-circle u-image-3" data-image-width="626" data-image-height="423"></div>
+                      <h3 class="u-text u-text-5">José</h3>
+                      <div class="u-border-6 u-border-white u-expanded-width u-line u-line-horizontal u-line-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <script>
+          $( "#foto1" ).click(function() {
+            $("#foto2").slideUp();
+          });
+          $( "#foto2" ).click(function() {
+            alert("AU AU AU");
+          });
+          $( "#foto3" ).click(function() {
+            $("#foto2").slideDown();
+          });
+        </script>
+    </body>
+</html>
